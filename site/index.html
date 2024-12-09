@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o português -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo para diferentes tamanhos de tela -->
+    <title>Meu Site Pessoal</title> <!-- Nome que vai aparecer na aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Aqui estamos conectando o arquivo de estilo CSS -->
+</head>
+<body>
+
+    <!-- Cabeçalho do site com links de navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li> <!-- Link para a seção "Sobre Mim" -->
+                <li><a href="#formacao">Formação</a></li> <!-- Link para a seção "Formação" -->
+                <li><a href="#portfolio">Portfólio</a></li> <!-- Link para a seção "Portfólio" -->
+                <li><a href="#contato">Contato</a></li> <!-- Link para a seção "Contato" -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo do site, onde fica o conteúdo principal -->
+    <main>
+        <!-- Seção sobre mim -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Samila e sou de Foz do Iguaçu. Sou naturalmente curiosa e adoro explorar maneiras criativas e não convencionais de resolver problemas. No meu tempo livre, você pode me encontrar pedalando ou maratonando filmes.</p> <!-- Descrição sobre a pessoa -->
+        </section>
+
+        <!-- Seção de formação -->
+        <section id="formacao">
+            <h2>Minha Formação</h2>
+            <p>Técnico em informática</p> <!-- Detalhes sobre a formação -->
+            <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+        </section>
+
+        <!-- Seção de portfólio -->
+        <section id="portfolio">
+            <h2>Meu Portfólio</h2>
+            <ul>
+                <li><a href="https://lavieessence.lojavirtualnuvem.com.br/ ">Projeto 1</a></li> <!-- Link para o um projeto pessoal -->
+            </ul>
+        </section>
+
+        <!-- Seção de contato com formulário -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contactForm"> <!-- Início do formulário de contato -->
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required> <!-- Campo para nome -->
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required> <!-- Campo para e-mail -->
+                <br><br>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea> <!-- Campo para mensagem -->
+                <br><br>
+
+                <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+            </form>
+            <p id="responseMessage"></p> <!-- Aqui vai aparecer a resposta depois que o formulário for enviado -->
+        </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2024 Meu Site Pessoal</p> <!-- Copyright que aparece no rodapé -->
+    </footer>
+
+    <script src="script.js"></script> <!-- Aqui estamos conectando o arquivo JavaScript -->
+</body>
+</html>
